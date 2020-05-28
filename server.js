@@ -1,6 +1,6 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
-const routes = require("./controllers/cats-controller");
+const routes = require("./controllers/burger-controller");
 
 const PORT = process.env.PORT || 8080;
 
