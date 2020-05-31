@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/api/burgers", async (req, res) => {
-  const data = await burger.create(["name", "sleepy"], [req.body.name, req.body.sleepy]);
+  const data = await burger.create(["name", "devour"], [req.body.name, req.body.devour]);
 
   res.json({ id: data.insertId });
 });
@@ -20,7 +20,7 @@ router.put("/api/burgers/:id", async (req, res) => {
 
   console.log("condition", condition);
 
-  const data = await burger.update({ sleepy: req.body.sleepy }, condition);
+  const data = await burger.update({ devour: req.body.devour }, condition);
 
   if (data.changedRows === 0) {
     res.status(404).end();
