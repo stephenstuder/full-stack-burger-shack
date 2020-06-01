@@ -1,4 +1,4 @@
-[![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)]
+![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)
 
 <img src="./public/assets/images/screenshot.png" alt="html image" width="1000"/>
 
