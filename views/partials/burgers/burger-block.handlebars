@@ -1,9 +1,15 @@
-<li>
+<li class="row">
+	<div class="col-12 text-center p-2">
 	{{name}}
 
-	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
-		{{#if devour}}Munch that Burger Down!{{else}}Burger Ready to Eat!{{/if}}
-	</button>
+	</div>
+	<div class="col-12 text-center p-2">
 
-	<button class="delete-burger" data-id="{{id}}">Throw It Away!</button>
+	<button class="change-devour boxed-btn3" data-id="{{id}}" data-newdevour="{{devour}}">
+		{{#if devour}}Munch that Burger Down!{{else}}Burger Ready to Eat!{{/if}}
+	<button class="delete-burger boxed-btn3" data-id="{{id}}">Throw It Away!</button>
+	</button>
+	</div>
+
+
 </li>

@@ -1,38 +1,86 @@
-<h1>Burgers!</h1>
+<div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-xl-9 col-md-9 col-md-12">
+        <div class="slider_text text-center">
+          <div class="deal_text">
+            <span>YUM</span>
+          </div>
+          <h3>FULL STACK
+          </h3>
+          <h4>Burger Shack</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h2>Burgers that are ready to eat!</h2>
+<div class="burger-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section_title text-center mb-5">
+          <span class="title">Burger Menu</span>
+          <h3>Add, prepare, and eat some burgers at the full stack burger shack!</h2>
+        </div>
+      </div>
+    </div>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
 
-<h2>Burgers that are devoured!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <h2 class="text-center">Burgers that are ready to eat!</h2>
+        <ul>
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devour=true}}
+          {{/unless}}
+          {{/each}}
+        </ul>
 
-<h2>Add a Burger</h2>
-<form class="create-form">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="text-center">Burgers that are devoured!</h2>
 
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+        <ul>
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burgers/burger-block devour=false}}
+          {{/if}}
+          {{/each}}
+        </ul>
+
+      </div>
+
+    </div>
   </div>
 
-  <div class="form-group">
-    <label for="devour">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Ready to Eat
-  </div>
 
-  <button type="submit">Add burger</button>
-</form>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6 bg-warning rounded p-3">
+        <h2 class="text-center add font-weight-bold">ADD A BURGER</h2>
+        <form class="create-form form-padding font-weight-bold">
+
+          <div class="form-group">
+            <label for="ca">Burger Name:</label>
+            <input type="text" id="ca" name="name" size="35">
+          </div>
+
+          <div class="form-group">
+            <label for="devour">State of the burger?</label><br>
+            <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+            <input type="radio" name="devoured" value="0"> Ready to Eat
+          </div>
+          <div class="text-center">
+            <button class="boxed-btn2 text-center" type="submit">Add burger</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+    <div class="col-lg-3"></div>
+  </div>
+</div>
