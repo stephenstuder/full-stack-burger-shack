@@ -1,6 +1,6 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(() => {
-  $(".change-devour").on("click", (event) => {
+  $(".change-devour").on("click", function(event) {
     let id = $(this).data("id");
     let newDevour = $(this).data("newdevour");
       let newDevourState = {
@@ -40,7 +40,7 @@ $(() => {
 
   $(".delete-burger").on("click", function (event) {
     let id = $(this).data("id");
-
+console.log(id);
     // Send the DELETE request.
     $.ajax("/api/burgers/" + id, {
       type: "DELETE",
