@@ -28,6 +28,13 @@ li {
   display: block;
   font-family: "Pacifico", cursive;
 }
+.title-black {
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  display: block;
+}
 .burger-area {
   padding-bottom: 115px;
   padding-top: 50px;
