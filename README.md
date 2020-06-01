@@ -3,7 +3,7 @@
 <img src="./public/assets/images/screenshot.PNG" alt="html image" width="1000"/>
 
 # full-stack-burger-shack
-Node, Express and Handlebars application that uses the MVC pattern and Heroku to allow users to input their favorite burgers and DEVOUR them.
+Node, Express, MySQL and Handlebars application that uses the MVC pattern and Heroku to allow users to input their favorite burgers and DEVOUR them.
 
 ## Installation
 Download the project contents and in the root folder run ```npm install``` to install dependancies 
