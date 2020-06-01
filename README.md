@@ -1,6 +1,6 @@
 ![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)
 
-<img src="./public/assets/images/screenshot.png" alt="html image" width="1000"/>
+<img src="./public/assets/images/screenshot.PNG" alt="html image" width="1000"/>
 
 # full-stack-burger-shack
 Node, Express and Handlebars application that uses the MVC pattern and Heroku to allow users to input their favorite burgers and DEVOUR them.
