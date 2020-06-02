@@ -85,6 +85,10 @@ li {
   font-weight: 400;
   color: #fff;
 }
+ul {
+  padding: 0px;
+  margin: 2px;
+}
 li {
   list-style: none;
   padding: 5px;
